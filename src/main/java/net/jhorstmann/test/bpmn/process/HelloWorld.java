@@ -10,6 +10,6 @@ public class HelloWorld implements JavaDelegate {
     @Override
     public void execute(DelegateExecution execution) throws Exception {
         Object name = execution.getVariable("name");
-        System.out.println("Hello " + name);
+        execution.setVariable("salutation", "Hello " + name);
     }
 }
