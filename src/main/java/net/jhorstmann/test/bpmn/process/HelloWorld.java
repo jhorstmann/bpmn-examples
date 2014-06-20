@@ -1,6 +1,6 @@
 package net.jhorstmann.test.bpmn.process;
 
-import net.jhorstmann.test.bpmn.Context;
+import net.jhorstmann.test.bpmn.SalutationContext;
 import net.jhorstmann.test.bpmn.flow.FlowScoped;
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;
@@ -12,10 +12,10 @@ import org.springframework.stereotype.Component;
 public class HelloWorld implements JavaDelegate {
 
     @Autowired
-    private Context context;
+    private SalutationContext salutationContext;
 
     @Override
     public void execute(DelegateExecution execution) throws Exception {
-        context.setSalutation("Hello " + context.getName());
+        salutationContext.setSalutation("Hello " + salutationContext.getName());
     }
 }

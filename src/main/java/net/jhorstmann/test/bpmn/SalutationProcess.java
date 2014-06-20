@@ -9,15 +9,15 @@ import org.springframework.stereotype.Component;
 @Component
 public class SalutationProcess {
     @Autowired
-    private ObjectFactory<Context> contextFactory;
+    private ObjectFactory<SalutationContext> contextFactory;
     @Autowired
     private RuntimeService runtimeService;
 
     @Flow
     public String sayHello(String name) {
-        Context context = contextFactory.getObject();
-        context.setName(name);
+        SalutationContext salutationContext = contextFactory.getObject();
+        salutationContext.setName(name);
         runtimeService.startProcessInstanceByKey("helloWorld");
-        return context.getSalutation();
+        return salutationContext.getSalutation();
     }
 }

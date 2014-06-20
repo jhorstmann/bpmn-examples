@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @FlowScoped
-public class Context {
+public class SalutationContext {
     private String name;
     private String salutation;
 
