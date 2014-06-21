@@ -1,4 +1,4 @@
-package net.jhorstmann.test.bpmn.flow;
+package net.jhorstmann.spring.flowscope;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -12,7 +12,7 @@ class FlowAspect {
     @Autowired
     private FlowScopeImpl flowScope;
 
-    @Around("@annotation(net.jhorstmann.test.bpmn.flow.Flow)")
+    @Around("@annotation(net.jhorstmann.spring.flowscope.Flow)")
     public Object wrapInFlowScope(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
 
         try {

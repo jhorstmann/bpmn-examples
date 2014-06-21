@@ -1,4 +1,4 @@
-package net.jhorstmann.test.bpmn.flow;
+package net.jhorstmann.spring.flowscope;
 
 import org.springframework.beans.factory.ObjectFactory;
 import org.springframework.beans.factory.config.Scope;

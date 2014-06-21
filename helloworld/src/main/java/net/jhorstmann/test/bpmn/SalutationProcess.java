@@ -1,6 +1,6 @@
 package net.jhorstmann.test.bpmn;
 
-import net.jhorstmann.test.bpmn.flow.Flow;
+import net.jhorstmann.spring.flowscope.Flow;
 import org.camunda.bpm.engine.RuntimeService;
 import org.springframework.beans.factory.ObjectFactory;
 import org.springframework.beans.factory.annotation.Autowired;

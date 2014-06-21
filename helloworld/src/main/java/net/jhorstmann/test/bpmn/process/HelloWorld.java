@@ -1,7 +1,7 @@
 package net.jhorstmann.test.bpmn.process;
 
 import net.jhorstmann.test.bpmn.SalutationContext;
-import net.jhorstmann.test.bpmn.flow.FlowScoped;
+import net.jhorstmann.spring.flowscope.FlowScoped;
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;
 import org.springframework.beans.factory.annotation.Autowired;

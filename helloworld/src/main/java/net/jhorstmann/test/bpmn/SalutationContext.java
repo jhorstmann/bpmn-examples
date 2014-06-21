@@ -1,6 +1,6 @@
 package net.jhorstmann.test.bpmn;
 
-import net.jhorstmann.test.bpmn.flow.FlowScoped;
+import net.jhorstmann.spring.flowscope.FlowScoped;
 import org.springframework.stereotype.Component;
 
 @Component

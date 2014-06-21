@@ -1,4 +1,4 @@
-package net.jhorstmann.test.bpmn.flow;
+package net.jhorstmann.spring.flowscope;
 
 import org.springframework.context.annotation.Scope;
 
