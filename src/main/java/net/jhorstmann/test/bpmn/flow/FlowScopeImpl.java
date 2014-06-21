@@ -11,7 +11,7 @@ import static com.google.common.base.Preconditions.checkState;
 
 @Component
 class FlowScopeImpl implements Scope {
-    private final ThreadLocal<Map<String, Object>> threadScope = new ThreadLocal<Map<String, Object>>();
+    private final ThreadLocal<Map<String, Object>> threadScope = new ThreadLocal<>();
 
     void begin() {
         Map<String, Object> scope = threadScope.get();
