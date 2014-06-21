@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import java.util.Date;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
@@ -25,6 +26,7 @@ public class ProcessTest {
         return historyService.createHistoricActivityInstanceQuery()
                              .processInstanceId(processInstanceId)
                              .activityId(activityId)
+                             .startedAfter(new Date(System.currentTimeMillis()-120*100L))
                              .list();
     }
 
