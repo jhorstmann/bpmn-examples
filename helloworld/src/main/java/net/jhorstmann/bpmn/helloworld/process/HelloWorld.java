@@ -1,6 +1,6 @@
-package net.jhorstmann.test.bpmn.process;
+package net.jhorstmann.bpmn.helloworld.process;
 
-import net.jhorstmann.test.bpmn.SalutationContext;
+import net.jhorstmann.bpmn.helloworld.SalutationContext;
 import net.jhorstmann.spring.flowscope.FlowScoped;
 import org.camunda.bpm.engine.delegate.DelegateExecution;
 import org.camunda.bpm.engine.delegate.JavaDelegate;

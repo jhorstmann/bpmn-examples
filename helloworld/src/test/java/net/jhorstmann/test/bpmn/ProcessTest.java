@@ -1,5 +1,6 @@
 package net.jhorstmann.test.bpmn;
 
+import net.jhorstmann.bpmn.helloworld.SalutationProcess;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>net.jhorstmann</groupId>
+        <groupId>net.jhorstmann.bpmn</groupId>
         <artifactId>bpmn-examples-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
