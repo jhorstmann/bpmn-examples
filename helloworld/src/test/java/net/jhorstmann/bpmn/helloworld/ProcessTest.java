@@ -1,4 +1,4 @@
-package net.jhorstmann.test.bpmn;
+package net.jhorstmann.bpmn.helloworld;
 
 import net.jhorstmann.bpmn.helloworld.SalutationProcess;
 import org.junit.Test;

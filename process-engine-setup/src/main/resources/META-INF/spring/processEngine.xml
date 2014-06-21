@@ -26,6 +26,7 @@
         <property name="databaseSchemaUpdate" value="true"/>
         <property name="jobExecutorActivate" value="false"/>
         <property name="deploymentResources" value="classpath:/META-INF/processes/*.bpmn"/>
+        <property name="history" value="full"/>
     </bean>
 
     <bean id="processEngine" class="org.camunda.bpm.engine.spring.ProcessEngineFactoryBean">
